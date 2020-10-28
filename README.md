@@ -14,8 +14,21 @@ of the file they downloaded.
 *Note: Keep in mind that MD5 is a deprecated cryptographic hash function and has been broken many times. It is vulnerable and allows for collision within its domain 
 to be discovered in mere seconds. It is advised to use either SHA-256 or SHA-512.*
 
+## Setup Instructions (Windows 10)
+
+The instructions for adding HashV to the environment path variable on your system are very simple:
+
+1. Download the .zip file and extract it anywhere you want on your computer. (It is recommended to create a new folder on your C: drive called hash-verifier and extract the .zip file there. You should then have a filepath looking like this: 'C:\hash-verifier\dist')
+2. - **(a) FOR ADMINS**: Go to the Windows search box and type "Edit the system environment variables" and press Enter. Then click on the button "Environment Variables". At the "System variables" (bottom box), select the "Path" variable and click "Edit".
+   - **(b) FOR NON-ADMINS**: Go to the Windows search box and just type "Edit environment variables for your account" and press Enter. At the "User variables" (top box), select the "Path" variable and click "Edit".
+4. Click "New" and enter the path of the 'dist' folder wherever you extracted it. If you followed the recommended location from step-1, then here you should enter "C:\hash-verifier\dist\"
+5. Reboot your computer. This is necessary for the path to register the new variable we created.
+
+Done! You can now use hash-verifier from anywhere on your system by using the "hashv" command. Type "hashv help" in your terminal to see the usage option
+
 ## Latest Release
 You can find the latest release [here](https://github.com/soutzis/hash-verifier/releases), which includes instructions for adding hash-verifier to the 
 environment path variable.
 
 
+ 
