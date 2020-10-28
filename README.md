@@ -26,9 +26,27 @@ The instructions for adding HashV to the environment path variable on your syste
 
 Done! You can now use hash-verifier from anywhere on your system by using the "hashv" command. Type "hashv help" in your terminal to see the usage option
 
+
+## Usage Example
+Let's try HashV by downloading the latest VirtualBox installer and verifying the download using the sha-256 checksum from the website. This example assumes that you successfuly followed the setup instructions and added HashV to the environment path.
+
+**1. Download the latest VBox installer**
+
+![image](https://i.imgur.com/5kWUEm2.png)
+
+**2. Find the original sha-256 hash digest of the file you just downloaded**
+![image](https://i.imgur.com/IX9liJm.png)
+![image](https://i.imgur.com/MDAspVr.png)
+
+**3. Go to the folder where you downloaded the file and type "cmd" in the explorer address bar**
+![image](https://i.imgur.com/APs2TBV.png)
+
+**4. Type hashv -filename- -hash- (Use tab for autocompletion in cmd) and press enter**
+![image](https://i.imgur.com/lPJUyEV.png)
+![image](https://i.imgur.com/baZQINp.png)
+
 ## Latest Release
 You can find the latest release [here](https://github.com/soutzis/hash-verifier/releases), which includes instructions for adding hash-verifier to the 
 environment path variable.
-
 
  
